@@ -51,7 +51,7 @@
     "webrtc-adapter": "^8.2.2"
   },
   "scripts": {
-    "start": "PORT=80 react-scripts start",
+    "start": "PORT=8080 react-scripts start",
     "start:tracker": "bittorrent-tracker",
     "start:streamsaver": "serve -p 3015 node_modules/streamsaver",
     "dev": "mprocs \"npx cross-env REACT_APP_TRACKER_URL=\"ws://localhost:8000\" REACT_APP_STREAMSAVER_URL=\"http://localhost:3015/mitm.html\" npm run start\" \"npm run start:tracker\" \"npm run start:streamsaver\"",

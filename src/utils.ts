@@ -16,8 +16,9 @@ export const isError = (e: any): e is Error => {
 }
 
 export const encodePassword = async (roomId: string, password: string) => {
-  const data = new TextEncoder().encode(`${roomId}_${password}`)
-  const digest = await window.crypto.subtle.digest('SHA-256', data)
-  const bytes = new Uint8Array(digest)
-  return window.btoa(String.fromCharCode(...bytes))
+  // const data = new TextEncoder().encode(`${roomId}_${password}`)
+  // const digest = await window.crypto.subtle.digest('SHA-256', data)
+  // const bytes = new Uint8Array(digest)
+  // return window.btoa(String.fromCharCode(...bytes))
+  return password;
 }
