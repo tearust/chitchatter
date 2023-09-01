@@ -22,6 +22,7 @@
     "classnames": "^2.3.1",
     "detectincognitojs": "^1.1.2",
     "fast-memoize": "^2.5.2",
+    "forge": "^2.3.0",
     "fun-animal-names": "^0.1.1",
     "idb-chunk-store": "^1.0.1",
     "localforage": "^1.10.0",
