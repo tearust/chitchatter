@@ -20,5 +20,5 @@ export const encodePassword = async (roomId: string, password: string) => {
   // const digest = await window.crypto.subtle.digest('SHA-256', data)
   // const bytes = new Uint8Array(digest)
   // return window.btoa(String.fromCharCode(...bytes))
-  return password;
+  return window.btoa(password);
 }
