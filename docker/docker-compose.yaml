@@ -1,0 +1,13 @@
+version: "3.1"
+services:
+
+  wallet:
+    image: nginx:alpine
+    container_name: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/proxy.conf
+      - /etc/letsencrypt:/etc/letsencrypt
+      - ./build:/www/dist
+    ports:
+      - 80:80
+      - 443:443
